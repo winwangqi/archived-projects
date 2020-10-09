@@ -1,0 +1,618 @@
+/* ===============base=============== */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu { margin: 0; padding: 0; }
+
+header, footer, section, article, aside, nav, address, figure, figcaption, menu, details { display: block; }
+
+html, body, fieldset, img, iframe, abbr { border: 0; }
+
+li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small { font-size: 100%; }
+
+a, a:hover { text-decoration: none; }
+
+html {
+    font-family: Gotham Book,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    color: #666;
+    font-family: "等线";
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: "";
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+@media (max-width: 640px) {
+    .hd640 {
+        display: none;
+    }
+}
+/* ===============/base=============== */
+
+/* ===============header=============== */
+header {
+    background: #222;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+header .wrap {
+    max-width: 1020px;
+    min-width: 900px;
+    height: 51px;
+    margin: 0 auto;
+    background: #222;
+}
+
+header .tsl-logo {
+    display: inline-block;
+    width: 100px;
+    height: 13px;
+    margin-top: 18px;
+    background: url("../images/logo.png");
+    background-size: 100px 13px;
+}
+
+header  ul li {
+    float: left;
+}
+
+header  ul li a {
+    color: #D3D3D3;
+    font-size: 13px;
+    line-height: 51px;
+}
+
+header  ul.fl {
+    margin-left: 50px;
+}
+
+header  ul li+li {
+    margin-left: 16px;
+}
+
+header  ul.fl li a {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header  ul li a.lighter {
+    font-weight: bolder;
+    color: #fff;
+}
+
+header  ul.fr li a:hover {
+    color: #FFF;
+    transition: color .4s;
+}
+
+header .mobile-menu {
+    display: inline-block;
+    margin-top: 11px;
+    width: 22px;
+    height: 19px;
+    background: url("../images/mobile-menu.png");
+}
+
+@media (max-width: 640px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    header .wrap {
+        min-width: 100%;
+        height: 42px;
+    }
+
+    header .tsl-logo {
+        margin-top: 14px;
+    }
+}
+
+@media (min-width: 640px) {
+
+    .hidden-desk {
+        display:none;
+    }
+
+    header .mobile-menu {
+        display: none;
+    }
+}
+/* ===============/header=============== */
+
+/* ===============banner=============== */
+.banner {
+    position: relative;
+}
+
+.banner .wrap {
+    margin: 0 auto;
+}
+
+.banner .desk-txt {
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.banner .desk-txt .container {
+    min-width: 900px;
+    max-width: 1020px;
+    border-bottom: 1px solid #81828C;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.banner .desk-txt h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 80px;
+}
+
+.banner .mobile-txt {
+    height: 58px;
+    border-bottom: 1px solid #ccc;
+    background-color: #EBEBEB;
+    z-index: 1;
+}
+
+.banner .mobile-txt h1 {
+    margin-left: 20px;
+    line-height: 58px;
+    color: #000;
+    font-size: 14px;
+}
+
+.banner .mobile-txt a {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    margin-top: 11px;
+    background: #c00;
+    font-size: 12px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.banner .mobile-txt a:last-child {
+    background: #000;
+    margin-right: 20px;
+}
+
+.banner .nav li {
+    float: left;
+}
+
+.banner .nav li+li {
+    margin-left: 15px;
+}
+
+.banner .nav li a {
+    color: #FFF;
+    line-height: 80px;
+    font-size: 13px;
+}
+
+.banner .nav li a:hover {
+    color: #ccc;
+    transition: color .4s;
+}
+
+.banner img {
+    width: 100%;
+    min-width: 960px;
+}
+
+@media (max-width: 640px) {
+    .banner img {
+        min-width: 100%;
+    }
+}
+/* ===============/banner=============== */
+
+/* ===============main=============== */
+main {
+
+}
+
+main h1 {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 60px;
+}
+
+main h2 {
+    text-align: left;
+    color: #000;
+    line-height: 1.4em;
+}
+
+main h3 {
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4em;
+}
+
+main .container {
+    padding: 0 20px;
+}
+
+main .info {
+    margin-bottom: 40px;
+}
+
+main .info p {
+    max-width: 666px;
+    margin: 0 auto;
+}
+
+/* -----performance----- */
+main .performance {
+    min-width: 900px;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+main .performance .item::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 180px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+main .performance .big-bulb::before {
+    background-image: url("../images/features--adaptive-headlights.png");
+}
+
+main .performance .air-filtration::before {
+    background-image: url("../images/features--hepa-filter.png");
+}
+
+main .performance .big-bulb,
+main .performance .air-filtration {
+    width: 412px;
+}
+
+@media (max-width: 640px) {
+    main h2 {
+        text-align: center;
+    }
+
+    main .performance {
+        max-width: 100%;
+        min-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main .performance .item::before {
+        width: 280px;
+    }
+
+    main .performance .big-bulb,
+    main .performance .air-filtration {
+        float: none;
+        width: 100%;
+    }
+}
+/* -----/performance----- */
+
+/* -----auto-drive----- */
+main .auto-drive .scd-p {
+    margin-top: 20px;
+}
+
+main .auto-drive img {
+    width: 100%;
+    display: block;
+}
+
+main .auto-drive .alternate {
+    padding: 50px 0;
+    background: #F7F7F7;
+}
+
+main .auto-drive .alternate h3 {
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+main .auto-drive .alternate p {
+    max-width: 666px;
+    margin: 0 auto;
+}
+
+main .auto-drive .section-features-container {
+    max-width: 1020px;
+    min-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+main .auto-drive .section-features {
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+
+}
+
+main .auto-drive [class^="feature-"]::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .auto-drive .feature-autosteer {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+main .auto-drive .feature-autosteer::before {
+    background-image: url("../images/features--autosteer.png");
+}
+
+main .auto-drive .feature-lane-change {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+main .auto-drive .feature-lane-change::before {
+    background-image: url("../images/features--lane-change.png");
+}
+
+main .auto-drive .feature-autopark {
+    float: right;
+    width: 32%;
+}
+
+main .auto-drive .feature-autopark::before {
+    background-image: url("../images/features--autopark.png");
+}
+
+@media (max-width: 640px) {
+    main .auto-drive .section-features-container {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 30px 0;
+        padding-bottom: 80px;
+    }
+
+    main .auto-drive .section-features {
+        padding: 0;
+    }
+
+    main .auto-drive [class^="feature-"] {
+        float: none;
+        width: 100%;
+    }
+
+    main .auto-drive [class^="feature-"]::before {
+        margin: 20px auto;
+    }
+
+    main .auto-drive .section-features p {
+        text-align: center;
+    }
+}
+/* -----/auto-drive----- */
+
+/* -----power-driven----- */
+main .power-driven {
+    width: 100%;
+    min-width: 960px;
+}
+
+main .power-driven .desk-engine {
+    width: 100%;
+}
+
+main .power-driven .desk-engine img {
+    width: 100%;
+}
+
+main .power-driven .desk-engine ul {
+    width: 530px;
+    margin: 10px auto;
+    margin-bottom: 60px;
+}
+
+main .power-driven .desk-engine li {
+    float: left;
+}
+
+main .power-driven .desk-engine li a {
+    display: inline-block;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 18px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+main .power-driven .desk-engine li.active a {
+    background: #f2f2f2;
+}
+
+main .power-driven .desk-engine li:first-child a {
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #ccc;
+}
+
+main .power-driven .desk-engine li:last-child a {
+    border-radius: 0 25px 25px 0;
+    border: 1px solid #ccc;
+}
+
+main .power-driven .mobile-engine {
+    position: relative;
+}
+
+main .power-driven .arrow {
+    position: absolute;
+    top: 45%;
+    font: 700 45px/1em "simsun";
+    cursor: pointer;
+}
+
+main .power-driven .left-arrow {
+    left: 10px;
+}
+
+main .power-driven .right-arrow {
+    right: 10px;
+}
+
+main .power-driven .mobile-engine img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+main .power-driven .mobile-engine p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main .power-driven .mobile-engine ul {
+    width: 18px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+main .power-driven .mobile-engine li {
+    float: left;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main .power-driven .mobile-engine li.active {
+    background: #ccc;
+}
+
+main .power-driven .container {
+    max-width: 1020px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+main .power-driven .engine-info {
+    width: 49%;
+    max-width: 500px;
+    float: left;
+    margin-right: 2%;
+}
+
+main .power-driven .engine-info p {
+    margin-bottom: 20px;
+}
+
+main .power-driven .engine-video {
+    margin-bottom: 50px;
+}
+
+main .power-driven .engine-video img {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 640px) {
+    main .power-driven {
+        min-width: 100%;
+    }
+
+    main .power-driven h1 {
+        font-size: 30px;
+    }
+
+    main .power-driven .container {
+        box-sizing: border-box;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    main .power-driven .engine-info {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    main .power-driven .engine-video {
+        float: none;
+    }
+
+    main .power-driven .engine-video h2 {
+        text-align: left;
+    }
+
+    main .power-driven .engine-video img {
+        width: 100%;
+    }
+}
+/* -----/power-driven----- */
+
+/* -----driver----- */
+main .driver {
+    background: #f7f7f7;
+}
+
+main .driver .info h1 {
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+main .driver img {
+    margin-top: 60px;
+    width: 100%;
+}
+/* -----/driver----- */
+/* ===============/main=============== */

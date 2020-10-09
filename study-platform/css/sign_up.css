@@ -1,0 +1,21 @@
+.sign_main_container{width: 422px; margin: 0 auto;}
+/*-----------------------------------------------------header----------------------------------------------------------*/
+header{background: #2f3440; margin-bottom: 40px;}
+.sign_header{height: 80px; color: white; background: #2f3440; }
+.sign_header a{color: white;}
+#sign_h1{font: 35px/80px "黑体"; color: white;}
+.sign_header_right{float: right; height: 80px; font: 15px/80px "Microsoft YaHei";}
+/*------------------------------------------------------main-----------------------------------------------------------*/
+section{border: 1px solid gainsboro; height: 40px; width: 400px; padding-left: 20px; margin-bottom: 35px;}
+section input{border: none; outline: none; height: 40px; font: 15px/40px "Microsoft YaHei"; padding-left: 20px; width: 310px;}
+[type="submit"]{width: 422px; height: 40px; outline: none; border: none; background: #2f3440; color: white; font-size: 20px; margin-bottom: 35px;}
+[type="submit"]:hover{color: #FFFB68; cursor: pointer; background: #4f5969;}
+#sign_protocol a:hover,#sign_protocol a:active{background: #2f3440;}
+a:hover,a:active{color: #FFFB68;}
+/*----------hintInfo-----------*/
+.hintInfo{margin-left: -18px; margin-top: 8px; color: #c5c5c5;}
+.hintInfo div{width: 16px; height: 16px; background: #c5c5c5; border-radius: 8px; color: white; text-align: center; line-height: 16px; display: inline-block; margin-right: 10px;}
+.hid{display: none;}
+
+.error{margin-left: -18px; margin-top: 8px; color: red;}
+.error div{width: 16px; height: 16px; background: red; border-radius: 8px; color: #ffffff; text-align: center; line-height: 14px; display: inline-block; margin-right: 10px;}

@@ -1,0 +1,58 @@
+@import "./animation";
+
+@BACKDROP: modal-backdrop;
+@BASE_ZIDX: 170810;
+
+.@{BACKDROP} {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: @BASE_ZIDX;
+}
+
+.modal {
+  //display: flex;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: @BASE_ZIDX + 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .modal-dialog {
+    width: 860px;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+
+@media (max-width: 992px) {
+  .modal {
+    .modal-dialog {
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    .modal-dialog {
+      width: auto;
+      margin: 0 20px;
+    }
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}

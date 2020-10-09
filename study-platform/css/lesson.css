@@ -1,0 +1,29 @@
+/*--------------------------------------------------------header--------------------------------------------------------*/
+header{background: #2f3440; margin-bottom: 40px;}
+header h1, header a{ height: 80px; font: 35px/80px "黑体"; color: white; background: #2f3440;}
+.lesson_top{margin-bottom: 40px; overflow: hidden;}
+/*------------------------------------------------------lesson----------------------------------------------------------*/
+video{width: 800px; height: 450px;}
+#lesson_video{float: left;}
+.lesson_right{width: 398px; height: 448px; float: right; border: 1px gainsboro solid;}
+.lesson_right h1{font: 30px/60px "Microsoft YaHei"; height: 60px; text-align: center; background: rgba(84,97,132,0.4);}
+#lesson_right_info{padding: 30px; text-align: justify;}
+.lesson_right p{margin-bottom: 10px; text-indent: 2em;font: 16px/1.8 "Microsoft YaHei";}
+/*------------------------------------------------------homework--------------------------------------------------------*/
+#homework{border: 1px gainsboro solid;}
+#homework h2{font: 20px "黑体"; padding: 20px 0; border-bottom: 1px gainsboro solid; text-indent: 1em;}
+#homework ol{padding: 20px 0;}
+#homework li{list-style: decimal inside; font: 14px/1.8 "Microsoft YaHei"; padding-left: 20px;}
+/*------------------------------------------------------discussion------------------------------------------------------*/
+#discussion h1{font: 20px "黑体"; padding: 30px 0; text-indent: 1em;}
+#discussion form textarea{width: 1000px; height: 150px; border: 1px gainsboro solid; font: 16px/1.8 "Microsoft YaHei"; padding: 15px;}
+#discussion [type="submit"]{border: none; height: 50px; width: 100px; position: relative; bottom: 20px; left: 65px; font: 20px "黑体"; background: rgba(84,97,132,0.4);}
+#discussion [type="submit"]:hover{cursor: pointer; background: rgba(57, 67, 96, 0.4); color: #FFFB68;}
+/*----------------------------students_discussion-------------------------------*/
+.stu_discussion{position: relative; margin-bottom: 25px;}
+.stu_discussion textarea{width: 1170px; height: 150px; font: 16px/1.8 "Microsoft YaHei"; padding: 15px;}
+.stu_discussion p{background: rgba(128, 145, 182, 0.4);  height: 40px; position: absolute; bottom: 3px; width: 1201px; font: 14px/40px "Microsoft YaHei";}
+.dis_date{padding: 0 30px;}
+.dis_name{float: right; color: #2f3440; margin-right: 50px;}
+.dis_name:hover{color: #FFFB68;}
+a:hover,a:active{color: #FFFB68;}

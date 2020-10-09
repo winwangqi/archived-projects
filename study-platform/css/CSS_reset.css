@@ -1,0 +1,11 @@
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,form,input,textarea,th,td,select,img{margin: 0; padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none; vertical-align: top;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;}
+textarea{resize: none; overflow: auto;}
+body{font: 12px "Microsoft YaHei";}
+.clear{zoom: 1;}
+.clear{content: ""; display: block; clear: both;}

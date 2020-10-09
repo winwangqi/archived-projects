@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<link rel="stylesheet" href="resource/jquery-pop-up-layer.css">
+</head>
+<body>
+	<input id="btn" type="button" value="click">
+    <input id="btn2" type="button" value="mouseover">
+    <input id="btn3" type="button" value="dblclick">
+
+	<script src="resource/jquery.js"></script>
+	<script src="resource/jquery-pop-up-layer.js"></script>
+	<script>
+		$("#btn").Layer({
+			text: "click",
+			event: "click"
+		});
+        $("#btn2").Layer({
+            text: "mouseover",
+            event: "mouseover"
+        });
+        $("#btn3").Layer({
+            text: "dblclick",
+            event: "dblclick"
+        });
+	</script>
+</body>
+</html>

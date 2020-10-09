@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link href="../css/CSS_reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/sign_up.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div class="sign_header w1200">
+        <span id="sign_h1"><a href="../index.html">学习教育平台</a> 欢迎注册</span>
+        <div class="sign_header_right">
+            <span>已有帐号？</span>
+            <a href="login.html">登录</a>
+        </div>
+    </div>
+</header>
+<div class="sign_main">
+    <div class="sign_main_container">
+        <form action="#" method="post">
+            <section>
+                <label for="user">用&nbsp;户&nbsp;名&nbsp;&nbsp;：</label>
+                <input type="text" name="user" id="user" placeholder="您的账户名和登录名">
+                <div class="hid"><div>!</div>支持中文、数字、字母、"-"、"_"的组合，4-20个字符</div>
+                <div class="error"><div>-</div>长度只能在4-20个字符之间</div>
+            </section>
+            <section>
+                <label for="password">设置密码：</label>
+                <input type="password" name="password" id="password" placeholder="建议至少使用两种字符组合">
+                <div class="hid"><div>!</div>建议使用字母数字、数字和符号两种及以上的组合，6-20个字符</div>
+                <div class="error"><div>-</div>长度只能在6-20个字符之间</div>
+            </section>
+            <section>
+                <label for="confirm">确认密码：</label>
+                <input type="password" name="password" id="confirm" placeholder="请再次输入密码">
+                <div class="hid"><div>!</div>请再次输入密码</div>
+                <div class="error"><div>-</div>两次密码输入不一致</div>
+            </section>
+            <section>
+                <label for="tel">手&nbsp;机&nbsp;号&nbsp;：</label>
+                <input type="tel" name="tel" id="tel" placeholder="建议使用常用手机">
+                <div class="hid"><div>!</div>完成验证后，可以使用该手机登录和找回密码</div>
+            </section>
+            <section>
+                <label for="mail">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+                <input type="email" name="email" id="mail" placeholder="建议使用常用邮箱">
+                <div class="hid"><div>!</div>完成验证后，可以使用该邮箱登录和找回密码</div>
+            </section>
+            <input type="submit" name="submit" value="注册">
+            <div id="sign_protocol">
+                <input type="checkbox" name="sign_agree" id="sign_agree">
+                <label for="sign_agree">我已阅读并同意</label>
+                <a href="#">《教学互动平台注册协议》</a>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="Fcontainer">
+        <p>地址：xxx&nbsp;&nbsp;邮编：xxxxxx&nbsp;&nbsp;信箱：1525277158@qq.com</p>
+        <p>版权所有&nbsp;&nbsp;王琦</p>
+        <p>ICP备案编号：京ICP备xxxxxxxx</p>
+    </div>
+</footer>
+<script src="../js/sign_up.js"></script>
+</body>
+</html>

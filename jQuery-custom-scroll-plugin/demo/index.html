@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scroll</title>
+    <link rel="stylesheet" href="resource/reset.css">
+    <link rel="stylesheet" href="resource/jquery-scroll.css">
+</head>
+<body>
+<!-- 示例容器 -->
+<div class="scroll-demo">
+    <!-- 标签切换区 -->
+    <ul class="scroll-tab clearfix">
+        <li class="tab-item tab-active">Article1</li>
+        <li class="tab-item">Article2</li>
+        <li class="tab-item">Article3</li>
+        <li class="tab-item">Article4</li>
+    </ul>
+    <!-- 滚动内容区 -->
+    <div class="scroll-wrap">
+        <!-- 滚动内容 -->
+        <div class="scroll-cont">
+            <div class="article">
+                <h1 class="anchor">Article1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+            </div>
+            <div class="article">
+                <h1 class="anchor">Article2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+            </div>
+            <div class="article">
+                <h1 class="anchor">Article3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+            </div>
+            <div class="article">
+                <h1 class="anchor">Article4</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur dignissimos dolore
+                    facilis inventore odit quaerat quam reiciendis tenetur, vitae. Dignissimos eaque excepturi illo
+                    minus molestias, nihil obcaecati placeat rem?</p>
+            </div>
+        </div>
+
+        <!-- 滚动条 -->
+        <div class="scroll-bar">
+            <!-- 滚动滑块 -->
+            <div class="scroll-slider"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="resource/jquery-3.0.0.min.js"></script>
+<script src="resource/jquery-scroll.js"></script>
+<script>
+    new $.CusScrollBar({
+        scrollDir: 'y', // 滚动方向
+        contSelector: ".scroll-cont",	// 滚动内容区选择器
+        barSelector: ".scroll-bar",	// 滚动条选择器
+        sliderSelector: ".scroll-slider",	// 滚动滑块选择器
+        tabItemSelector: '.tab-item',   // 标签选择器
+        tabActiveClass: 'tab-active',   // 标签选中类名
+        anchorSelector: '.anchor',  // 锚点选择器
+        articleSelector: '.article',    // 文章选择器
+        animate: true,  // 缓动滚动
+        wheelStep: 80,  // 滚动步长
+        duration: 250,  // 滚动速度
+        paddingArticle: true    // 开启文章补白
+    });
+</script>
+</html>

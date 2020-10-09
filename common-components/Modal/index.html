@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal</title>
+  <link rel="stylesheet" href="./style/Modal.css">
+</head>
+<body>
+  <!-- Large modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">b2</button>
+  <button id="wild-btn">wild-btn</button>
+
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi atque facere itaque non obcaecati quas quia quisquam velit! Exercitationem in ipsam mollitia nobis odit quisquam tempora. A consequuntur eum, fugiat id laborum maiores modi porro quisquam quo unde. Aliquam aspernatur cupiditate, debitis enim error eveniet, ipsum laboriosam laudantium odio, possimus quos sit unde voluptates! Delectus doloribus ducimus ex libero maxime non vitae? Architecto assumenda, at deleniti ea facilis fugiat fugit ipsa ipsam laborum minus modi mollitia nemo nihil non odio possimus, quae quaerat quia quisquam quod reprehenderit, repudiandae tenetur vel. Ab dolorem eum ipsam tenetur. Architecto, doloremque reiciendis?
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        haadfadsfalkdsjfas
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="spec-modal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        this is special modal.
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/Modal.js"></script>
+
+  <script>
+//    window.onload = function () {
+//      const lgModal = new Modal({ modalSelector: '.bs-example-modal-lg-2' });
+//      document.querySelector('#wild-btn').addEventListener('click', () => {
+//        lgModal.show();
+//        setTimeout(lgModal.hide.bind(lgModal), 3000);
+//      }, false);
+//    };
+  </script>
+</body>
+</html>

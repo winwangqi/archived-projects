@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <link rel="icon" type="image/icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <base target="_blank">
+</head>
+<body>
+    <!--<header>-->
+        <!--<nav class="bx">-->
+            <!--<ul>-->
+                <!--<li><a href="javascript:;">常用</a></li>-->
+                <!--<li><a href="javascript:;">新闻</a></li>-->
+                <!--<li><a href="javascript:;">影音</a></li>-->
+                <!--<li><a href="javascript:;">社交</a></li>-->
+                <!--<li><a href="javascript:;">购物</a></li>-->
+                <!--<li><a href="javascript:;">阅读</a></li>-->
+                <!--<li><a href="javascript:;">学习</a></li>-->
+                <!--<li><a href="javascript:;">游戏</a></li>-->
+            <!--</ul>-->
+            <!--<form action="#" method="get" class="clearfix">-->
+                <!--<input type="search" name=search id="search-box" class="search-box fl" autocomplete="off"><input type="submit" value="必应" class="submit fl">-->
+            <!--</form>-->
+        <!--</nav>-->
+    <!--</header>-->
+    <!--<div class="blank"></div>-->
+    <main id="all-ct" class="bx">  <!--  id="all-ct" -->
+        <section class="bx clearfix {{sec-name}}" id="sec-ct">
+            <!-- section标题 -->
+            <h3 class="box-tit" id="box-tit">{{sec-tit}}</h3>
+            <!-- 内容盒子 -->
+            <div class="box-ct" id="box-ct">
+                <!-- 条目 -->
+                <div class="ct-itm" id="ct-itm">
+                    <a href="{{itm-href}}">
+                        <!-- 图标包裹容器 -->
+                        <div class="img-wrap">
+                            <img src="{{itm-img}}" alt="{{itm-alt}}">
+                        </div>
+                        <!-- 条目描述 -->
+                        <p>{{itm-desc}}</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 添加到主屏后的标题（IOS） -->
+    <meta name="apple-mobile-web-app-title" content="珠江煤业数据统计"> 
+    <!-- 启用 WebApp 全屏模式（IOS） -->
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="apple-touch-fullscreen" content="yes" /> 
+
+    <title>珠江煤业数据统计</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <!-- google-fonts -->
+    <!--<link rel="stylesheet" href="//fonts.useso.com/css?family=Roboto:300,400,500,700,400italic">-->
+    <!--<link rel="stylesheet" href="//fonts.useso.com/icon?family=Material+Icons">-->
+    <!-- jquery -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- vue -->
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <!-- vue-material -->
+    <link rel="stylesheet" href="node_modules/vue-material/dist/vue-material.css">
+    <script src="node_modules/vue-material/dist/vue-material.js"></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="assets/style/index.css">
+    <script src="assets/script/index.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="zjmy">珠江煤业</h1>
+        <md-tabs :md-centered="true">
+            <md-tab id="expenses" md-label="开支表" md-accent="red">
+                <!-- 开支表内容 -->
+                <md-tabs :md-centered="true" md-elevation="2">
+                    <md-tab id="expenses-2017" md-label="2017年统计">
+                        <div class="content">
+                            <md-table>
+                                <md-table-header>
+                                    <md-table-row>
+                                        <md-table-head>序号</md-table-head>
+                                        <md-table-head md-numeric>分类</md-table-head>
+                                        <md-table-head md-numeric>合计（元）</md-table-head>
+                                    </md-table-row>
+                                </md-table-header>
+
+                                <md-table-body v-if="info['expenses']">
+                                    <md-table-row v-for="(val, key, index) in info['expenses']['2017']">
+                                        <md-table-cell>{{index + 1}}</md-table-cell>
+                                        <md-table-cell>{{key}}</md-table-cell>
+                                        <md-table-cell>{{val}}</md-table-cell>
+                                    </md-table-row>
+                                </md-table-body>
+                            </md-table>
+                        </div>
+                    </md-tab>
+
+                    <md-tab id="expenses-2016" md-label="2016年统计">
+                        <div class="content">
+                            <md-table>
+                                <md-table-header>
+                                    <md-table-row>
+                                        <md-table-head>序号</md-table-head>
+                                        <md-table-head md-numeric>分类</md-table-head>
+                                        <md-table-head md-numeric>合计（元）</md-table-head>
+                                    </md-table-row>
+                                </md-table-header>
+
+                                <md-table-body v-if="info['expenses']">
+                                    <md-table-row v-for="(val, key, index) in info['expenses']['2016']">
+                                        <md-table-cell>{{index + 1}}</md-table-cell>
+                                        <md-table-cell>{{key}}</md-table-cell>
+                                        <md-table-cell>{{val}}</md-table-cell>
+                                    </md-table-row>
+                                </md-table-body>
+                            </md-table>
+                        </div>
+                    </md-tab>
+                </md-tabs>
+            </md-tab>
+            <md-tab id="balance" md-label="资金平衡表">
+                <!-- 资金平衡表内容 -->
+                <md-tabs :md-centered="true" md-elevation="2">
+                    <md-tab id="expenses-2017" md-label="2017年统计">
+                        <div class="content">
+                            <div class="earn">
+                                <h1>收入</h1>
+                                <md-table>
+                                    <md-table-header>
+                                        <md-table-row>
+                                            <md-table-head>序号</md-table-head>
+                                            <md-table-head md-numeric>分类</md-table-head>
+                                            <md-table-head md-numeric>合计（元）</md-table-head>
+                                        </md-table-row>
+                                    </md-table-header>
+
+                                    <md-table-body v-if="info['balance']">
+                                        <md-table-row v-for="(val, key, index) in info['balance']['2017']['earn']">
+                                            <md-table-cell>{{index + 1}}</md-table-cell>
+                                            <md-table-cell>{{key}}</md-table-cell>
+                                            <md-table-cell>{{val}}</md-table-cell>
+                                        </md-table-row>
+                                    </md-table-body>
+                                </md-table>
+                            </div>
+
+                            <div class="expenditur">
+                                <h1>支出</h1>
+                                <md-table>
+                                    <md-table-header>
+                                        <md-table-row>
+                                            <md-table-head>序号</md-table-head>
+                                            <md-table-head md-numeric>分类</md-table-head>
+                                            <md-table-head md-numeric>合计（元）</md-table-head>
+                                        </md-table-row>
+                                    </md-table-header>
+
+                                    <md-table-body v-if="info['balance']">
+                                        <md-table-row v-for="(val, key, index) in info['balance']['2017']['expenditur']">
+                                            <md-table-cell>{{index + 1}}</md-table-cell>
+                                            <md-table-cell>{{key}}</md-table-cell>
+                                            <md-table-cell>{{val}}</md-table-cell>
+                                        </md-table-row>
+                                    </md-table-body>
+                                </md-table>
+                            </div>
+                        </div>
+                    </md-tab>
+
+                    <md-tab id="expenses-2016" md-label="2016年统计">
+                        <div class="content">
+                            <div class="earn">
+                                <h1>收入</h1>
+                                <md-table>
+                                    <md-table-header>
+                                        <md-table-row>
+                                            <md-table-head>序号</md-table-head>
+                                            <md-table-head md-numeric>分类</md-table-head>
+                                            <md-table-head md-numeric>合计（元）</md-table-head>
+                                        </md-table-row>
+                                    </md-table-header>
+
+                                    <md-table-body v-if="info['balance']">
+                                        <md-table-row v-for="(val, key, index) in info['balance']['2016']['earn']">
+                                            <md-table-cell>{{index + 1}}</md-table-cell>
+                                            <md-table-cell>{{key}}</md-table-cell>
+                                            <md-table-cell>{{val}}</md-table-cell>
+                                        </md-table-row>
+                                    </md-table-body>
+                                </md-table>
+
+                            </div>
+                            <div class="expenditur">
+                                <h1>支出</h1>
+                                <md-table>
+                                    <md-table-header>
+                                        <md-table-row>
+                                            <md-table-head>序号</md-table-head>
+                                            <md-table-head md-numeric>分类</md-table-head>
+                                            <md-table-head md-numeric>合计（元）</md-table-head>
+                                        </md-table-row>
+                                    </md-table-header>
+
+                                    <md-table-body v-if="info['balance']">
+                                        <md-table-row v-for="(val, key, index) in info['balance']['2016']['expenditur']">
+                                            <md-table-cell>{{index + 1}}</md-table-cell>
+                                            <md-table-cell>{{key}}</md-table-cell>
+                                            <md-table-cell>{{val}}</md-table-cell>
+                                        </md-table-row>
+                                    </md-table-body>
+                                </md-table>
+                            </div>
+                        </div>
+                    </md-tab>
+                </md-tabs>
+            </md-tab>
+        </md-tabs>
+    </div>
+</body>
+
+</html>

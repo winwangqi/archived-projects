@@ -1,0 +1,116 @@
+body {
+    background: #ccc;
+}
+
+.scroll-demo {
+    width: 540px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    margin: 30px auto;
+
+}
+
+/* 标签切换区域 */
+.scroll-tab {
+    height: 34px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    background: #f8f8f8;
+}
+
+.scroll-tab .tab-item {
+    float: left;
+    height: 100%;
+    font: 14px/34px "Microsoft Yahei";
+    text-align: center;
+    border-right: 1px solid #e5e5e5;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.scroll-tab .tab-active {
+    color: #00be3c;
+    background: #fff;
+    border-top: 2px solid #00be3c;
+    margin: -1px 0;
+}
+
+/* 滚动内容区 */
+.scroll-wrap {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+/* 滚动内容 */
+.scroll-wrap .scroll-cont {
+    height: 100%;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.scroll-wrap .scroll-cont h1 {
+    font: 16px/3em "Microsoft Yahei";
+    text-align: center;
+}
+
+.scroll-wrap .scroll-cont p {
+    font-size: 14px;
+    line-height: 20px;
+    text-indent: 2em;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+/* 滚动条 */
+.scroll-wrap .scroll-bar {
+    position: absolute;
+}
+
+.scroll-wrap .scroll-bar-hover {
+    background: #f6f6f6;
+}
+
+/* 滑块 */
+.scroll-wrap .scroll-slider {
+    position: absolute;
+    border-radius: 9px;
+    cursor: pointer;
+    background: #E7E7E7;
+}
+
+.scroll-wrap .scroll-bar-hover .scroll-slider {
+    background: #959595;
+}
+
+/* 滚动条-竖向 */
+.scroll-wrap .scroll-bar-y {
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 100%;
+}
+
+/* 滑块-竖向 */
+.scroll-wrap .scroll-slider-y {
+    top: 0;
+    left: 1px;
+    width: 12px;
+    height: 100%;
+}
+
+/* 滚动条-横向 */
+.scroll-wrap .scroll-bar-x {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 14px;
+}
+
+/* 滑块-横向 */
+.scroll-wrap .scroll-slider-x {
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 12px;
+}

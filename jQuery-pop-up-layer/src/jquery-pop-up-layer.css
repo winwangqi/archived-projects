@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.layer {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.layer h2 {
+    font: 400 20px/2em "Microsoft YaHei UI";
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+.layer p {
+    text-indent: 2em;
+    font-size: 16px;
+}
+.layer input {
+    display: block;
+    margin: 10px auto 0;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+}
